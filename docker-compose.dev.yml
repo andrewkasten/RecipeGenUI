@@ -1,5 +1,6 @@
 services:
   frontend:
+    # always pulls the current LTS version of Node on Alpine Linux
     image: node:lts-alpine
     working_dir: /frontend
     volumes:
@@ -27,6 +28,8 @@ services:
       - DB_USER=$POSTGRES_USER
       - DB_PASS=$POSTGRES_PASSWORD
       - GEMINI_API_KEY=$GEMINI_API_KEY
+      - UNSPLASH_ACCESS_KEY=$UNSPLASH_ACCESS_KEY
+      - CALORIE_NINJAS_API_KEY=$CALORIE_NINJAS_API_KEY
     depends_on:
       - db
   db:
