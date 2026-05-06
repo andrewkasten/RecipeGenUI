@@ -5,7 +5,6 @@ import os
 from typing import List, Optional
 from google import genai
 from pydantic import BaseModel, Field
-from .weather import get_hourly_weather_by_zip
 from datetime import date
 
 logger = logging.getLogger(__name__)
@@ -24,7 +23,7 @@ class Ingredient(BaseModel):
 
 
 class Recipe(BaseModel):
-    reasoning: str = Field(description="Based on produce season and pricing for area and type preferences")
+    reasoning: str = Field(description="Based on produce season for area and type preferences")
     recipe_name: str = Field(description="The name of the recipe.")
     prep_time_minutes: Optional[int] = Field(description="Optional time in minutes to prepare the recipe.")
     color: str = Field(description="choose one hex color for this recipe's UI")    # AI picks a hex color
@@ -68,8 +67,8 @@ class GemRecipeService:
         client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
         state = us_seasonal_data[state]
 
-        # Prompt includes location and preference so Gemini can factor in the produce in season and affordable in that region right now
-        prompt = f"Please provide a simple recipe that is good based on produce season for {today} in {state} and preference: {type}"
+        # Prompt includes location and preference so Gemini can factor in the produce in season
+        prompt = f"Please provide a simple recipe based on produce in season, plus staples, for month, {today}, within {state} and preference: {type}"
         response = client.models.generate_content(
             model="gemini-2.5-flash-lite",
             contents=prompt,
@@ -79,7 +78,6 @@ class GemRecipeService:
                 "response_json_schema": Recipe.model_json_schema(),
             },
         )
-
         # Validate and parse the raw JSON string into a typed Recipe object
         recipe = Recipe.model_validate_json(response.text)
         recipe_dict = recipe.model_dump()
@@ -87,30 +85,7 @@ class GemRecipeService:
         # recipe_dict["calories"] = calorie_ninjas(recipe_dict['ingredients']['name'],recipe_dict['ingredients']['quantity'])
         return recipe_dict
 
-# class GemService:
-#     @staticmethod
-#     def generate_text(input):
-#         client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-#         response = client.models.generate_content(
-#             model="gemini-2.5-flash",
-#             contents=input,
-#         )
-#         return response.text
 
-class GemService:
-    @staticmethod
-    def generate_weather_note(zip_code):
-        weather = get_hourly_weather_by_zip(zip_code)
-        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=(
-                f"Based on this hourly weather forecast: {weather}, "
-                "write a single short notification note (1-2 sentences) summarizing current conditions. "
-                "Be friendly and concise — like a weather app push notification."
-            ),
-        )
-        return response.text
 
 
 
