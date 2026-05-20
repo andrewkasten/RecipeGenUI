@@ -42,11 +42,10 @@ export default function Header() {
 
       <header className="mx-auto max-w-2xl text-center">
         <h2 className="text-4xl font-semibold tracking-tight text-balance text-teal-500 sm:text-5xl">
-          Live UI — Seasonal Recipe Generator
+          Seasonal Recipe Card Generator
         </h2>
         <p className="mt-10 text-lg/8 text-gray-700">
-          Enter your location and what you're craving. AI will generate the
-          recipe, image, and color. Watch live as a new card component appears.
+          Choose a location and what you're craving. AI will generate the recipe with seasonal produce and choose the text color. Watch live as a new card component appears.
         </p>
       </header>
     </div>
