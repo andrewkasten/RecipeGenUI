@@ -1,0 +1,457 @@
+[
+	{
+		"id": 1,
+		"state": "Utah",
+		"type": "Gumbo",
+		"recipe": {
+			"color": "#8B4513",
+			"image": null,
+			"reasoning": "Gumbo is a hearty stew that can be adapted to seasonal availability. While traditional gumbo often includes okra and tomatoes, this recipe focuses on a flavorful base and protein that are generally accessible year-round or have stable pricing. The root vegetables like onions and bell peppers are also widely available.",
+			"ingredients": [
+				{
+					"name": "Chicken thighs",
+					"quantity": "1 lb, boneless, skinless, cut into 1-inch pieces"
+				},
+				{
+					"name": "Andouille sausage",
+					"quantity": "1/2 lb, sliced"
+				},
+				{
+					"name": "All-purpose flour",
+					"quantity": "1/2 cup"
+				},
+				{
+					"name": "Vegetable oil",
+					"quantity": "1/2 cup"
+				},
+				{
+					"name": "Onion",
+					"quantity": "1 large, chopped"
+				},
+				{
+					"name": "Green bell pepper",
+					"quantity": "1 large, chopped"
+				},
+				{
+					"name": "Celery stalks",
+					"quantity": "2, chopped"
+				},
+				{
+					"name": "Garlic",
+					"quantity": "4 cloves, minced"
+				},
+				{
+					"name": "Chicken broth",
+					"quantity": "6 cups"
+				},
+				{
+					"name": "Diced tomatoes",
+					"quantity": "1 (14.5 oz) can, undrained"
+				},
+				{
+					"name": "File powder",
+					"quantity": "1 tablespoon (optional, for thickening and flavor)"
+				},
+				{
+					"name": "Creole seasoning",
+					"quantity": "1 tablespoon (or to taste)"
+				},
+				{
+					"name": "Bay leaves",
+					"quantity": "2"
+				},
+				{
+					"name": "Salt and black pepper",
+					"quantity": "to taste"
+				},
+				{
+					"name": "Cooked white rice",
+					"quantity": "for serving"
+				},
+				{
+					"name": "Green onions",
+					"quantity": "for garnish, chopped"
+				}
+			],
+			"recipe_name": "Simple Chicken and Sausage Gumbo",
+			"instructions": [
+				"In a large pot or Dutch oven, heat the vegetable oil over medium-high heat. Add the flour and whisk constantly until a dark brown roux forms (about 15-20 minutes). Be careful not to burn it.",
+				"Add the chopped onion, bell pepper, and celery to the pot. Cook until softened, about 5-7 minutes.",
+				"Add the minced garlic and cook for another minute until fragrant.",
+				"Stir in the chicken pieces and sliced sausage. Cook until lightly browned.",
+				"Pour in the chicken broth and diced tomatoes. Bring to a simmer.",
+				"Add the Creole seasoning, bay leaves, salt, and pepper. Stir well.",
+				"Reduce heat to low, cover, and simmer for at least 30 minutes, or longer for flavors to meld.",
+				"If using, stir in the file powder during the last 5 minutes of cooking for added thickness and flavor. (Do not boil after adding file powder).",
+				"Taste and adjust seasonings as needed.",
+				"Serve hot over cooked white rice, garnished with chopped green onions."
+			],
+			"prep_time_minutes": 30
+		}
+	}
+]
+
+[
+	{
+		"id": 1,
+		"state": "Idaho",
+		"type": "Soup",
+		"recipe": {
+			"color": "#F5DEB3",
+			"image": "https://pixabay.com/get/g9508c3b079ebe810b77b76ec3529d2c9d7109066652593a813f669e91d17306b6396d1f700ecefc3d6789d0ddfaf848e7f7cac9d119fe4c1f2113368a5d0ac9a_640.jpg",
+			"reasoning": "Given it's fall in Idaho, root vegetables like potatoes, carrots, and onions are in season and typically affordable. This creamy potato soup is a comforting and simple choice that utilizes these readily available ingredients.",
+			"ingredients": [
+				{
+					"name": "Potatoes",
+					"quantity": "4 medium, peeled and diced"
+				},
+				{
+					"name": "Onion",
+					"quantity": "1 medium, chopped"
+				},
+				{
+					"name": "Carrots",
+					"quantity": "2 medium, chopped"
+				},
+				{
+					"name": "Garlic",
+					"quantity": "2 cloves, minced"
+				},
+				{
+					"name": "Vegetable Broth",
+					"quantity": "4 cups"
+				},
+				{
+					"name": "Milk",
+					"quantity": "1 cup"
+				},
+				{
+					"name": "Butter",
+					"quantity": "2 tablespoons"
+				},
+				{
+					"name": "Salt",
+					"quantity": "to taste"
+				},
+				{
+					"name": "Black Pepper",
+					"quantity": "to taste"
+				},
+				{
+					"name": "Optional: Fresh Chives or Parsley",
+					"quantity": "for garnish"
+				}
+			],
+			"recipe_name": "Simple Creamy Potato Soup",
+			"instructions": [
+				"Melt butter in a large pot or Dutch oven over medium heat.",
+				"Add chopped onion and carrots and cook until softened, about 5-7 minutes.",
+				"Add minced garlic and cook for another minute until fragrant.",
+				"Add diced potatoes and vegetable broth to the pot. Bring to a boil, then reduce heat and simmer for 15-20 minutes, or until potatoes are tender.",
+				"Carefully transfer about half of the soup to a blender (or use an immersion blender directly in the pot) and blend until smooth. Return the blended soup to the pot.",
+				"Stir in the milk and heat gently until warmed through. Do not boil.",
+				"Season with salt and pepper to taste.",
+				"Serve hot, garnished with fresh chives or parsley if desired."
+			],
+			"prep_time_minutes": 45
+		}
+	},
+	{
+		"id": 2,
+		"state": "California",
+		"type": "Mexican",
+		"recipe": {
+			"color": "#2E8B57",
+			"image": "https://pixabay.com/get/g19d04f520742c9e8c3dffe9f7050fe93e6fc89af306e2b71638dc539185f11867d42e5930b05a869b6e4fa405468cc79_640.jpg",
+			"reasoning": "Avocadoes, tomatoes, cilantro, and onions are typically in season and affordable in California. This recipe is a simple and delicious way to enjoy these fresh ingredients with a Mexican flair.",
+			"ingredients": [
+				{
+					"name": "Avocadoes",
+					"quantity": "2 ripe"
+				},
+				{
+					"name": "Roma Tomatoes",
+					"quantity": "2 medium, diced"
+				},
+				{
+					"name": "Red Onion",
+					"quantity": "1/4 cup, finely chopped"
+				},
+				{
+					"name": "Cilantro",
+					"quantity": "1/4 cup, chopped"
+				},
+				{
+					"name": "Lime",
+					"quantity": "1, juiced"
+				},
+				{
+					"name": "Jalapeño",
+					"quantity": "1/2, seeded and finely minced (optional)"
+				},
+				{
+					"name": "Salt",
+					"quantity": "to taste"
+				},
+				{
+					"name": "Black Pepper",
+					"quantity": "to taste"
+				}
+			],
+			"recipe_name": "Quick Avocado Salsa Fresca",
+			"instructions": [
+				"Halve the avocadoes, remove the pits, and scoop the flesh into a medium bowl.",
+				"Gently mash the avocado with a fork, leaving some chunks for texture.",
+				"Add the diced tomatoes, chopped red onion, chopped cilantro, lime juice, and minced jalapeño (if using) to the bowl.",
+				"Season with salt and pepper to taste.",
+				"Gently stir to combine all ingredients.",
+				"Serve immediately as a salsa with chips, or as a topping for tacos, burritos, or salads."
+			],
+			"prep_time_minutes": 10
+		}
+	},
+	{
+		"id": 3,
+		"state": "Utah",
+		"type": "Salad",
+		"recipe": {
+			"color": "#90EE90",
+			"image": "https://pixabay.com/get/g72254e6500eb2809b689d9fb152ab71934172c23337bf64c8cc7887362a6a608b28b13bb833e3389fac7743eb6408b8c33362b3075a4b8a0cc0be845699a6f30_640.jpg",
+			"reasoning": "Strawberries and spinach are both in season in Utah during late spring and early summer, making them a cost-effective and fresh choice for a salad. Feta cheese and almonds provide a nice salty and crunchy contrast.",
+			"ingredients": [
+				{
+					"name": "Fresh Spinach",
+					"quantity": "5 cups"
+				},
+				{
+					"name": "Fresh Strawberries",
+					"quantity": "1.5 cups, hulled and sliced"
+				},
+				{
+					"name": "Feta Cheese",
+					"quantity": "1/2 cup, crumbled"
+				},
+				{
+					"name": "Slivered Almonds",
+					"quantity": "1/3 cup, toasted"
+				},
+				{
+					"name": "Balsamic Vinaigrette",
+					"quantity": "1/4 cup (or to taste)"
+				}
+			],
+			"recipe_name": "Strawberry Spinach Salad with Feta and Almonds",
+			"instructions": [
+				"Gently wash and dry the spinach.",
+				"In a large bowl, combine the spinach, sliced strawberries, crumbled feta cheese, and toasted slivered almonds.",
+				"Drizzle with balsamic vinaigrette and toss gently to coat.",
+				"Serve immediately."
+			],
+			"prep_time_minutes": 15
+		}
+	},
+	{
+		"id": 4,
+		"state": "New York",
+		"type": "Breakfast",
+		"recipe": {
+			"color": "#FF6347",
+			"image": "https://pixabay.com/get/g2da4b817aedaef26707547c703829b2eed3db1712db048be2a43dbb9c05c6eefee3fb211549e2cf3fb6bcd46b558903cb8aa1e072909ab946b78dc42272fc1b2_640.jpg",
+			"reasoning": "Spring and early summer in New York offer an abundance of fresh berries, which are perfect for a light and delicious breakfast. This recipe uses readily available ingredients and is quick to prepare.",
+			"ingredients": [
+				{
+					"name": "Fresh Strawberries",
+					"quantity": "1 cup, hulled"
+				},
+				{
+					"name": "Banana",
+					"quantity": "1, ripe"
+				},
+				{
+					"name": "Milk (dairy or non-dairy)",
+					"quantity": "1 cup"
+				},
+				{
+					"name": "Honey or Maple Syrup (optional)",
+					"quantity": "1 teaspoon"
+				},
+				{
+					"name": "Ice cubes (optional)",
+					"quantity": "3-4"
+				}
+			],
+			"recipe_name": "Strawberry Banana Smoothie",
+			"instructions": [
+				"Wash and hull the strawberries.",
+				"Peel the banana and break it into chunks.",
+				"Combine strawberries, banana, milk, and optional sweetener and ice cubes in a blender.",
+				"Blend until smooth and creamy.",
+				"Pour into a glass and serve immediately."
+			],
+			"prep_time_minutes": 5
+		}
+	},
+	{
+		"id": 5,
+		"state": "Arizona",
+		"type": "BBQ",
+		"recipe": {
+			"color": "#FF7F50",
+			"image": "https://pixabay.com/get/g35369b509569e6ae9e8bf0cbb32a12e1d49eb308f4801e35784479af334f454af5a7d6d670e8c023b00704425ab3a97d01c861f0fd59934caf84bc4461d428c0_640.jpg",
+			"reasoning": "Produce in Arizona is generally abundant and affordable during the spring and summer months, including corn, tomatoes, and bell peppers. These ingredients are perfect for a fresh salsa that complements BBQ dishes.",
+			"ingredients": [
+				{
+					"name": "Corn",
+					"quantity": "2 cups, fresh or frozen"
+				},
+				{
+					"name": "Tomatoes",
+					"quantity": "1 cup, diced"
+				},
+				{
+					"name": "Red Onion",
+					"quantity": "1/2 cup, finely chopped"
+				},
+				{
+					"name": "Bell Pepper (any color)",
+					"quantity": "1/2 cup, diced"
+				},
+				{
+					"name": "Jalapeño",
+					"quantity": "1, seeded and minced (optional)"
+				},
+				{
+					"name": "Cilantro",
+					"quantity": "1/4 cup, chopped"
+				},
+				{
+					"name": "Lime Juice",
+					"quantity": "2 tablespoons"
+				},
+				{
+					"name": "Cumin",
+					"quantity": "1/2 teaspoon"
+				},
+				{
+					"name": "Salt",
+					"quantity": "1/4 teaspoon, or to taste"
+				},
+				{
+					"name": "Black Pepper",
+					"quantity": "1/8 teaspoon, or to taste"
+				}
+			],
+			"recipe_name": "Southwestern BBQ Corn Salsa",
+			"instructions": [
+				"If using fresh corn, grill or boil it until tender, then cut the kernels off the cob. If using frozen corn, thaw it.",
+				"In a medium bowl, combine the corn kernels, diced tomatoes, chopped red onion, diced bell pepper, minced jalapeño (if using), and chopped cilantro.",
+				"In a small bowl, whisk together the lime juice, cumin, salt, and black pepper.",
+				"Pour the dressing over the corn mixture and toss gently to combine.",
+				"Let the salsa sit for at least 10 minutes to allow the flavors to meld before serving.",
+				"Serve as a fresh topping for grilled meats, tacos, or as a side dish."
+			],
+			"prep_time_minutes": 15
+		}
+	},
+	{
+		"id": 6,
+		"state": "Yukon",
+		"type": "Dinner",
+		"recipe": {
+			"color": "#FFD700",
+			"image": "https://pixabay.com/get/g2de77c541de6c6dbd1bedbb4f290605bd6e6db5d1286091d11697064937cabd2a17c5541b85cfea2e99735659011685f9a966e2a6b8ce8e3a9c5bc478332ce40_640.jpg",
+			"reasoning": "Yukon Gold potatoes are in season and generally affordable, making them a great base for a simple and satisfying dinner. This recipe leverages their creamy texture for a comforting meal.",
+			"ingredients": [
+				{
+					"name": "Yukon Gold Potatoes",
+					"quantity": "2 lbs, cut into 1-inch cubes"
+				},
+				{
+					"name": "Olive Oil",
+					"quantity": "3 tablespoons"
+				},
+				{
+					"name": "Garlic",
+					"quantity": "4 cloves, minced"
+				},
+				{
+					"name": "Dried Rosemary",
+					"quantity": "1 teaspoon"
+				},
+				{
+					"name": "Dried Thyme",
+					"quantity": "1 teaspoon"
+				},
+				{
+					"name": "Salt",
+					"quantity": "1 teaspoon, or to taste"
+				},
+				{
+					"name": "Black Pepper",
+					"quantity": "1/2 teaspoon, or to taste"
+				}
+			],
+			"recipe_name": "Simple Roasted Yukon Gold Potatoes with Garlic and Herbs",
+			"instructions": [
+				"Preheat oven to 400°F (200°C).",
+				"In a large bowl, toss the cubed potatoes with olive oil, minced garlic, rosemary, thyme, salt, and pepper until evenly coated.",
+				"Spread the potatoes in a single layer on a baking sheet.",
+				"Roast for 30-40 minutes, or until the potatoes are tender and golden brown, flipping them halfway through.",
+				"Serve hot as a side dish or a light dinner."
+			],
+			"prep_time_minutes": 15
+		}
+	},
+	{
+		"id": 7,
+		"state": "Utah",
+		"type": "Sauce",
+		"recipe": {
+			"color": "#FF6347",
+			"image": "https://pixabay.com/get/gce7feb35bb9c1d1f748d2ace04964fb7ff5296357bc926d33a676f22f72ccda1af497f8f62a8c725a2f1e2800a2b084cfb6b26540fd89d0f98579624036a0f41_640.jpg",
+			"reasoning": "Tomatoes are in season and typically more affordable in Utah during the late summer and early fall. This recipe uses them as the base for a simple and versatile sauce.",
+			"ingredients": [
+				{
+					"name": "Fresh Tomatoes",
+					"quantity": "2 lbs, ripe"
+				},
+				{
+					"name": "Garlic",
+					"quantity": "3 cloves, minced"
+				},
+				{
+					"name": "Onion",
+					"quantity": "1/2, finely chopped"
+				},
+				{
+					"name": "Olive Oil",
+					"quantity": "2 tablespoons"
+				},
+				{
+					"name": "Salt",
+					"quantity": "1 teaspoon, or to taste"
+				},
+				{
+					"name": "Black Pepper",
+					"quantity": "1/2 teaspoon, or to taste"
+				},
+				{
+					"name": "Dried Basil",
+					"quantity": "1 teaspoon (optional)"
+				}
+			],
+			"recipe_name": "Simple Tomato Sauce",
+			"instructions": [
+				"Wash and roughly chop the tomatoes.",
+				"Heat olive oil in a large pot or Dutch oven over medium heat.",
+				"Add chopped onion and cook until softened, about 5 minutes.",
+				"Add minced garlic and cook for 1 minute more until fragrant.",
+				"Add chopped tomatoes, salt, pepper, and dried basil (if using).",
+				"Bring the mixture to a simmer, then reduce heat to low, cover, and cook for at least 30 minutes, stirring occasionally, until the tomatoes have broken down.",
+				"For a smoother sauce, you can use an immersion blender or carefully transfer to a regular blender and blend until desired consistency.",
+				"Taste and adjust seasoning if needed."
+			],
+			"prep_time_minutes": 15
+		}
+	}
+]

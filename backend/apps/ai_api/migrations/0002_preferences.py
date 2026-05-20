@@ -11,10 +11,10 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Preferences',
+            name='Recipe',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('city_state', models.CharField(max_length=100)),
+                ('state', models.CharField(max_length=100)),
                 ('type', models.CharField(max_length=50)),
                 ('recipe', models.JSONField(blank=True, default=dict)),
             ],
