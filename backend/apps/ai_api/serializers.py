@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from .models import Output, Preferences, WeatherNote
+from .models import Recipe
 
 
 class RecipeSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Preferences
+        model = Recipe
         fields = ['id', 'state','type', 'recipe']
