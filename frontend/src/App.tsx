@@ -30,10 +30,10 @@ type RecipeItem = {
   recipe: RecipeData;
 };
 
-type WeatherNote = {
-  zip_code: string;
-  note: string;
-};
+// type WeatherNote = {
+//   zip_code: string;
+//   note: string;
+// };
 
 function App() {
   const [recipe, setRecipe] = useState<RecipeItem[]>([]);

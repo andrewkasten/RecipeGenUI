@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const API_BASE = import.meta.env.VITE_BASE_URL || "";
-const prompt =
-  "Short note on if tomorrow's weather is good for walking a dog in Lehi, Utah? If it's Sunshine and clouds mixed, High 56F, Winds SSW at 5 to 10 mph, Humidity 31 ";
+// const API_BASE = import.meta.env.VITE_BASE_URL || "";
+// const prompt =
+//   "Short note on if tomorrow's weather is good for walking a dog in Lehi, Utah? If it's Sunshine and clouds mixed, High 56F, Winds SSW at 5 to 10 mph, Humidity 31 ";
 
 export default function Header() {
   // const [note, setNote] = useState<string>("");
