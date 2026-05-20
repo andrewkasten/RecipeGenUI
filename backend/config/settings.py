@@ -28,6 +28,13 @@ DEBUG = True if os.getenv("DEBUG") == "True" else False
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
 
+# Origins trusted for CSRF (must include scheme). Comma-separated env var.
+CSRF_TRUSTED_ORIGINS = [o for o in os.getenv("CSRF_TRUSTED_ORIGINS", "").split(",") if o]
+
+# Trust X-Forwarded-Proto from the reverse proxy (nginx) so request.is_secure() works.
+if os.getenv("USE_PROXY_SSL_HEADER", "False") == "True":
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 
 # Application definition
 
@@ -125,7 +132,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# CORS
+# CORS — local dev origin plus any prod origins supplied via env
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-]
+] + [o for o in os.getenv("CORS_ALLOWED_ORIGINS", "").split(",") if o]
