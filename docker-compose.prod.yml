@@ -13,11 +13,12 @@ services:
     build:
       context: ./backend
       dockerfile: ./Dockerfile
-    # Bind only to the loopback interface on the host so the public internet
-    # cannot reach Django directly — ImpactDesk's nginx (on the same host)
-    # proxies to 127.0.0.1:8001.
+    # Bind to all host interfaces on 8001 so ImpactDesk's nginx (on the same
+    # host but a different bridge network) can reach it via the docker bridge
+    # gateway / host.docker.internal. Public exposure is gated by the EC2
+    # Security Group — port 8001 must remain CLOSED to the internet.
     ports:
-      - "127.0.0.1:8001:8000"
+      - "8001:8000"
     environment:
       - DJANGO_KEY=${DJANGO_KEY}
       - DEBUG=False
