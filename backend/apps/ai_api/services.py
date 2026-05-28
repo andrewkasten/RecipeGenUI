@@ -2,6 +2,7 @@ import httpx
 import json
 import logging
 import os
+import time
 from typing import List, Optional
 from pydantic import BaseModel, Field
 from datetime import date
@@ -121,15 +122,46 @@ class GemRecipeService:
             f"Otherwise ignore the list entirely."
         )
         print(prompt)
-        response = client.models.generate_content(
-            model="gemini-3.1-flash-lite",
-            contents=prompt,
-            config={
-                # Forces the response to be valid JSON matching our Recipe schema
-                "response_mime_type": "application/json",
-                "response_json_schema": Recipe.model_json_schema(),
-            },
-        )
+
+        # Gemini occasionally returns 503 UNAVAILABLE during demand spikes.
+        # Retry the same model with a short exponential-ish backoff before giving up.
+        # If retries are exhausted, try one fallback model as a final defense.
+        PRIMARY_MODEL = "gemini-3.1-flash-lite"
+        FALLBACK_MODEL = "gemini-2.5-flash-lite"
+        BACKOFF_SEC = [0, 1.5, 3.0]  # 3 attempts on the primary, worst case ~4.5s
+
+        def _call_gemini(model_name: str):
+            return client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config={
+                    # Forces the response to be valid JSON matching our Recipe schema
+                    "response_mime_type": "application/json",
+                    "response_json_schema": Recipe.model_json_schema(),
+                },
+            )
+
+        response = None
+        last_err = None
+        for attempt, delay in enumerate(BACKOFF_SEC, start=1):
+            if delay:
+                time.sleep(delay)
+            try:
+                response = _call_gemini(PRIMARY_MODEL)
+                logger.info("Gemini OK on %s attempt %d", PRIMARY_MODEL, attempt)
+                break
+            except Exception as e:
+                last_err = e
+                logger.warning("Gemini %s attempt %d failed: %s", PRIMARY_MODEL, attempt, e)
+
+        if response is None:
+            # Primary exhausted — try the fallback model once
+            try:
+                response = _call_gemini(FALLBACK_MODEL)
+                logger.info("Gemini OK on fallback %s", FALLBACK_MODEL)
+            except Exception as e:
+                logger.error("Gemini fully unavailable; primary + fallback both failed")
+                raise RuntimeError(f"Gemini unavailable after retries; last error: {e}") from e
         # Validate and parse the raw JSON string into a typed Recipe object
         recipe = Recipe.model_validate_json(response.text)
         recipe_dict = recipe.model_dump()

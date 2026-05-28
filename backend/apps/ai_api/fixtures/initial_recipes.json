@@ -1,0 +1,33 @@
+[
+  {
+    "model": "ai_api.recipe",
+    "pk": 3,
+    "fields": {
+      "state": "Missouri",
+      "type": "Lunch",
+      "recipe": {
+        "color": "#FFD700",
+        "image": "https://pixabay.com/get/g0b0685facfe863f2a4a1ab99c59a4863e486011396154a1907e0df2c5be2b358ff93d9565383dac4292fe761cadadc01ef2fbc24a27f54dc94f478ccbf40e4eb_640.jpg",
+        "calories": 589.1999999999999,
+        "reasoning": "A light and refreshing Ginger-Soy Chicken Salad that utilizes seasonal citrus and ginger to create a vibrant, balanced lunch for one.",
+        "ingredients": [
+          { "name": "cooked chicken breast, shredded", "quantity": "1 cup" },
+          { "name": "fresh lettuce", "quantity": "2 cups, chopped" },
+          { "name": "fresh orange, segmented", "quantity": "1/2 fruit" },
+          { "name": "fresh ginger, grated", "quantity": "1 teaspoon" },
+          { "name": "soy sauce", "quantity": "1 tablespoon" },
+          { "name": "rice vinegar", "quantity": "1 tablespoon" },
+          { "name": "sesame oil", "quantity": "1 teaspoon" }
+        ],
+        "recipe_name": "Ginger-Citrus Chicken Salad",
+        "instructions": [
+          "In a small bowl, whisk together the soy sauce, rice vinegar, sesame oil, and freshly grated ginger to create the dressing.",
+          "Place the chopped lettuce in a serving bowl.",
+          "Top the lettuce with the shredded chicken and orange segments.",
+          "Drizzle the dressing over the salad and toss gently to coat before serving."
+        ],
+        "prep_time_minutes": 15
+      }
+    }
+  }
+]
