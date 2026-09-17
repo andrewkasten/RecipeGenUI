@@ -121,7 +121,7 @@ class GemRecipeService:
             f"as a side, garnish, or substitution: {seasonal_hint}. "
             f"Otherwise ignore the list entirely."
         )
-        print(prompt)
+        print(prompt)y
 
         # Gemini occasionally returns 503 UNAVAILABLE during demand spikes.
         # Retry the same model with a short exponential-ish backoff before giving up.
